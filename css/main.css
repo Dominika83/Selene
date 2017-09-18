@@ -278,7 +278,6 @@ ol.crossed-over > li::after {
     flex-direction: column;
 }
 
-
 .header2 {
     background: url("../images/banner-photo.png");
     background-repeat: no-repeat;
