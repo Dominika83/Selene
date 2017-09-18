@@ -45,6 +45,13 @@ jQuery(document).ready(function ($) {
 });
 
 
+/* SLIDER 2 - crossed out list */
+$('#carousel').on('slid.bs.carousel', function () {
+    var actualSlide = $(".carousel-inner .item.active").index();
+    $(".slider-indicator-number").text("0" + (actualSlide + 1));
+});
+
+
 /* SLIDER 2 - crossed out list 
 
  ;(function(){
