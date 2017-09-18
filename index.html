@@ -1,0 +1,406 @@
+<!doctype html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+          integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"
+            ></script>
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/min-main.css">
+</head>
+
+<body>
+
+<!--NAVIGATION-->
+<nav class="navbar navbar-default banner">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="Selene"></a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+            <form class="navbar-form navbar-right navbar-form-search" role="search">
+                <div class="search-form-container hdn" id="search-input-container">
+                    <div class="search-input-group">
+                        <button type="button" class="btn btn-default" id="hide-search-input-container"><span
+                                class="glyphicon glyphicon-option-horizontal" aria-hidden="true"></span></button>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="">
+                        </div>
+                    </div>
+
+                </div>
+
+                <button type="submit" class="btn btn-default" id="search-button">
+                    <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                </button>
+            </form>
+            <ul class="nav navbar-nav navbar-right navbar-nav-primary">
+                <li><a href="#">home</a></li>
+                <li><a href="#">about us</a></li>
+                <li><a href="#">projects</a></li>
+                <li><a href="#">clients</a></li>
+                <li><a href="#">contact</a></li>
+                <li><a href="#">blog</a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+
+<!--MAIN SLIDER for DESKTOP, TABLET min-width:768) -->
+<section class="header">
+    <div class="slider-container">
+        <div class="row hidden-xs hidden-sm" id="banner-slider">
+
+            <div class="col-sm-2">
+                <div class="slider-controls-container">
+                    <a href="#carousel" class="slider-control left" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                    </a>
+
+                    <div class="slider-indicator-number">01</div>
+
+                    <a href="#carousel" class="slider-control right" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-sm-2 list-bottom">
+                <ol class="list-unstyled crossed-over">
+                    <li data-target="#carousel" data-slide-to="0"> 01</li>
+                    <li data-target="#carousel" data-slide-to="1"> 02</li>
+                    <li data-target="#carousel" data-slide-to="2"> 03</li>
+                    <li data-target="#carousel" data-slide-to="3"> 04</li>
+                </ol>
+            </div>
+
+            <div class="col-sm-8">
+                <div id="carousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="item active ba-slide">
+                            <img src="images/banner-photo.png" alt="Slide 1">
+                            <div class="carousel-caption">
+                                <p>John Doe</p>
+                                <h2>Architecture aims et eternity</h2>
+                            </div>
+                        </div>
+                        <div class="item ba-slide">
+                            <img src="images/banner-photo.png" alt="Slide 2">
+                            <div class="carousel-caption">
+                                <p>John Doe</p>
+                                <h2>Architecture aims et eternity</h2>
+                            </div>
+                        </div>
+                        <div class="item ba-slide">
+                            <img src="images/banner-photo.png" alt="Slide 3">
+                            <div class="carousel-caption">
+                                <p>John Doe</p>
+                                <h2>Architecture aims et eternity</h2>
+                            </div>
+                        </div>
+                        <div class="item ba-slide">
+                            <img src="images/banner-photo.png" alt="Slide 3">
+                            <div class="carousel-caption">
+                                <p>John Doe</p>
+                                <h2>Architecture aims et eternity</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--MAIN SLIDER for PHONE man-width:768)-->
+<section class="header2">
+    <div class="container-fluid">
+        <div class="row hidden-md hidden-lg">
+            <div class="col-md-12 header2-text">
+                <p>John Doe</p>
+                <h2>Architecture aims et eternity</h2>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--CREATE-->
+<section class="create">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6 create-left">
+                <div class="create-margin-text">
+                    <h1>Curabitur volutpat</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-6 create-right">
+                <div class="create-right-photo">
+                    
+                    <div class="create-right-text">
+                        <h1>We create <br>cool ideas.</h1>
+                    </div>
+                    <img src="images/we-create.png">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--CATEGORY-->
+<section class="category">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-6 col-md-3 category-border category_idea">
+                <h1>Idea.</h1>
+            </div>
+            <div class="col-xs-6 col-md-3 category-border category_concept">
+                <h1>Concept.</h1>
+            </div>
+
+            <div class="col-xs-6 col-md-3 category-border category_design">
+                <h1>Design.</h1>
+            </div>
+            <div class="col-xs-6 col-md-3 category-border category_develop">
+                <h1>Develop.</h1>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--WORK-->
+<section class="work-projects">
+<div class="work">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12 work-top">
+                <h1>How we work</h1>
+            </div>
+        </div>
+        <div class="row work-center">
+            <div class="col-md-4 work-center-item">
+                <p class="work-after work1"><span>Dexterity</span></p>
+            </div>
+            <div class="col-md-4 work-center-item">
+                <p class="work-after work2"><span>Team</span></p>
+            </div>
+            <div class="col-md-4 work-center-item">
+                <p class="work-after work3"><span>Partnership</span></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--PROJECTS-->
+<div class="projects">
+    <div class="container-fluid">
+        <div id="main_area">
+                <!-- Slider -->
+                <div class="row projects-position">
+                    
+                    <div class="col-xs-12" id="slider">
+                        <!-- Top part of the slider -->
+                       
+                        <div class="row">
+                            <div class="project-white-background">
+                            </div>
+                            <div class="row project-bottom">
+                                <div class="col-xs-12 project-top">
+                                    <h1>Latest project</h1>
+                                </div>
+                            </div>
+                            <div class="col-sm-6" id="carousel-bounding-box">
+                                <div class="carousel slide" id="myCarousel">
+                                    <!-- Carousel items -->
+                                    <div class="carousel-inner">
+                                        <div class="active item" data-slide-number="0">
+                                        <img src="images/photo-4.png"></div>
+
+                                        <div class="item" data-slide-number="1">
+                                        <img src="images/photo-4.png"></div>
+
+                                        <div class="item" data-slide-number="2">
+                                        <img src="images/photo-4.png"></div>
+
+                                        <div class="item" data-slide-number="3">
+                                        <img src="images/photo-4.png"></div>
+                                       
+                                    </div><!-- Carousel nav -->
+                                                           
+                                </div>
+                                <a class="left carousel-control hidden-xs" href="#myCarousel" role="button" data-slide="prev">
+                                    <span class="glyphicon glyphicon-chevron-left"></span>                                       
+                                </a>
+                                <a class="right carousel-control hidden-xs" href="#myCarousel" role="button" data-slide="next">
+                                    <span class="glyphicon glyphicon-chevron-right"></span>                                       
+                                </a>
+                            </div>
+                            <div class="col-sm-6" id="carousel-text"></div>
+
+                            <div id="slide-content" style="display: none;">
+                                <div id="slide-content-0">
+                                    <h2>Modern art gallery <br>Warsaw, Poland 1</h2>
+                                    <p class="project-after project-1">Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat.</p>
+                                    <p class="sub-text"><a href="#" class="slide-content-button">Case study</a></p>
+                                </div>
+
+                                <div id="slide-content-1">
+                                    <h2>Modern art gallery <br>Warsaw, Poland 2 </h2>
+                                    <p class="project-after project-2">Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat.</p>
+                                    <p class="sub-text"><a href="#" class="slide-content-button">Case study</a></p>
+                                </div>
+
+                                <div id="slide-content-2">
+                                    <h2>Modern art gallery <br>Warsaw, Poland 3</h2>
+                                    <p class="project-after project-3">Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat.</p>
+                                    <p class="sub-text"><a href="#" class="slide-content-button">Case study</a></p>
+                                </div>
+
+                                <div id="slide-content-3">
+                                    <h2>Modern art gallery <br>Warsaw, Poland</h2>
+                                    <p class="project-after project-4">Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat.</p>
+                                    <p class="sub-text"><a href="#" class="slide-content-button">Case study</a></p>
+                                </div>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div><!--/Slider-->
+
+                <div class="row hidden-xs" id="slider-thumbs">
+                    <ul class="col-sm-12 hide-bullets">
+                        <li class="col-sm-2">
+                            <a class="thumbnail thumbnail-border" id="carousel-selector-0"><img src="images/photo-1.png"></a>
+                        </li>
+
+                        <li class="col-sm-2">
+                            <a class="thumbnail thumbnail-border" id="carousel-selector-1"><img src="images/photo-2.png"></a>
+                        </li>
+
+                        <li class="col-sm-2">
+                            <a class="thumbnail thumbnail-border" id="carousel-selector-2"><img src="images/photo-3.png"></a>
+                        </li>
+
+                        <li class="col-sm-2">
+                            <a class="thumbnail thumbnail-border" id="carousel-selector-3"><img src="images/photo-4small.png"></a>
+                        </li>
+                    </ul>                 
+                </div>
+        </div>
+</div>
+</div>
+</section>
+
+<!--COMPANIES-->
+<section class="companies">
+    <div class="container">
+        <div class="row companies-row">
+
+            <div class="col-sm-4 col-md-2 companies-img">
+                <img src="images/logo-1.png">
+            </div>
+            <div class="col-sm-4 col-md-2 companies-img">
+                <img src="images/logo-2.png">
+            </div>
+            <div class="col-sm-4 col-md-2 companies-img">
+                <img src="images/logo-3.png">
+            </div>
+            <div class="col-sm-4 col-md-2 companies-img">
+                <img src="images/logo-4.png">
+            </div>
+            <div class="col-sm-4 col-md-2 companies-img">
+                <img src="images/logo-5.png">
+            </div>
+            <div class="col-sm-4 col-md-2 companies-img">
+                <img src="images/logo-6.png">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--CONTACT-->
+<section class="contact">
+    <div class="container">
+        <div class="row contact_main_content contact-border">
+            
+            <div class="col-sm-6 contact-high">
+                <div class="row">
+                    <div class="col-cm-12 contact_main_content_nav">
+                        <a href="#">CONTACT US</a>
+                        <a href="#">PHONE</a>
+                        <a href="#">E-MAIL</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-cm-12 contact_main_content_form">
+                        <form class="action_form" action="index.html" method="post">
+                            <div class="action_form__input">
+                                <input type="text" name="Name" value="" placeholder="Name" id="input_Name">
+                            </div>
+                            <div class="action_form__input">
+                                <input type="text" name="Phone" value="" placeholder="Phone" id="input_Phone">
+                            </div>
+                            <div class="action_form__input">
+                                <input type="text" name="Email" value="" placeholder="E-mail" id="input_Email">
+                            </div>
+                            <textarea name="Message" rows="4" cols="20" placeholder="Message"></textarea>
+                        </form>
+                        <div class="contact_main_content_form_button">
+                            <a href="#">SEND</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 contact_main">
+                <img src="images/kontakt.png">
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="footer__logo">
+                    <img src="images/footer_logo.png">
+                </div>
+                <div class="footer__text">
+                    <p>Copyright 2016. All rights reserved by sumo.co</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!--SCRIPT--> 
+<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+
+</body>
+
+</html>
