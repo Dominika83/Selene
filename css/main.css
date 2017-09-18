@@ -116,8 +116,8 @@ a:hover, a:focus, a:active {
 
 /* MAIN SLIDER */
 .header .carousel-inner {
-    display: flex;
-    justify-content: center;
+    /*display: flex;*/
+    /*justify-content: center;*/
 }
 
 .header .carousel-inner .item img {
