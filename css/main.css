@@ -652,14 +652,6 @@ a.thumbnail img:hover {
     padding: 0;
 }
 
-.contact_main img {
-    float: left;
-    width: 80%;
-    max-width: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
 .contact_main_content {
     position: relative;
     z-index: 1;
@@ -696,40 +688,6 @@ a.thumbnail img:hover {
     height: 100%;
     z-index: 1;
 }
-
-.contact_main_content:hover::before {
-    border-top-color: #97d1eb;
-    border-right-color: #97d1eb;
-    transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
-}
-
-.contact_main_content:hover::after {
-    border-bottom-color: #97d1eb;
-    border-left-color: #97d1eb;
-    transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
-}
-
-/*
-.contact-border {
-    height: 50vw;
-    position: relative;
-}
-
-.contact-border:hover:after {
-    display: block;
-}
-
-.contact-border:after {
-    content: "";
-    display: none;
-    border: 10px solid #5da8ef;
-    position: absolute;
-    height: 85%;
-    width: 85%;
-    top: 5%;
-    left: 0%;
-}
-*/
 
 .contact_main_content_nav {
     margin: 50px 0;
@@ -775,6 +733,35 @@ a.thumbnail img:hover {
 .contact_main_content_form_button a:hover {
     color: #97d1eb;
     text-decoration: underline;
+}
+
+.content-form-image {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.content-form-image:after {
+    position: absolute;
+    content: '';
+    display: block;
+    background: url(../images/kontakt.png);
+    background-size: contain;
+    height: 206px;
+    width: 137px;
+    top: 0;
+    right: -15px;
+    z-index: -1;
+}
+
+.content-form-image:before {
+    position: absolute;
+    content: '';
+    display: block;
+    right: 0;
+    top: 13px;
+    height: 100%;
+    border: 9px solid #97d1eb;
+    width: 100%;
 }
 
 .action_form {
