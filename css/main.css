@@ -623,29 +623,17 @@ ol.crossed-over > li::after {
     color: #c1c1c1;
 }
 
-.thumbnail {
+a.thumbnail {
     border: none;
     background: transparent;
 }
 
-.thumbnail-border {
-    height: 10vw;
-    position: relative;
+a.thumbnail img {
+    border: 9px solid transparent;
 }
 
-.thumbnail:hover:after {
-    display: block;
-}
-
-.thumbnail:after {
-    content: "";
-    display: none;
-    border: 10px solid #98D1ED;
-    position: absolute;
-    height: 86%;
-    width: 97%;
-    top: 2%;
-    left: 2%;
+a.thumbnail img:hover {
+    border: 9px solid #98D1ED;
 }
 
 /* COMPANIES */
