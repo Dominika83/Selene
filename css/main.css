@@ -736,8 +736,8 @@ a.thumbnail img:hover {
 }
 
 .content-form-image {
-    margin-bottom: 20px;
     position: relative;
+    padding-bottom: 45px;
 }
 
 .content-form-image:after {
