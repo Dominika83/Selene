@@ -744,7 +744,7 @@ a.thumbnail img:hover {
     position: absolute;
     content: '';
     display: block;
-    background: url(../images/kontakt.png);
+    background: url("../images/kontakt.png");
     background-size: contain;
     height: 206px;
     width: 137px;
